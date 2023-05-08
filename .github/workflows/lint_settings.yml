@@ -1,0 +1,11 @@
+ignore:
+  - index.htm
+  - cart.html
+  - about.html
+  - deals.html
+  - footer.xml
+  - header.html
+  - menu.html
+  - js/..
+  - sass/..
+  - css/..
