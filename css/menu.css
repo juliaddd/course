@@ -55,7 +55,7 @@
 }
 .category a:hover {
   text-decoration: none;
-  color: #b6b5b5;
+  color: #ECAD2F;
 }
 
 .category:hover {
@@ -96,6 +96,10 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 100px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
