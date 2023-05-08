@@ -1,0 +1,246 @@
+@import "./variables.scss";
+
+.content {
+    padding: 100px 0px 0px 0px;
+}
+
+.content_text {
+    font-size: 1.5rem;
+    line-height: 25px;
+}
+
+.content_text p {
+    margin: 0px 0px 20px 0px;
+}
+
+@media (max-width: 767px) {
+    .content {
+        padding: 100px 0px 0px 0px;
+    }
+}
+
+.header {
+    // хедер занимает всю ширину, фиксирован на странице
+    width: 100%;
+    // height: 70px;
+    position: fixed;
+    font-size: 1.5rem;
+    // прилеплен к координате 0 по игрикам
+    top: 0;
+    left: 0;
+    // хедер над всеми элементами
+    z-index: 50;
+
+    .header_body {
+        //  хедер контжйнер ограничивает ширину контентной части
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        // выравниваем контент по горизонтали
+        align-items: center;
+        height: 80px;
+    }
+
+}
+
+.header:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $blue;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.79);
+    z-index: 2;
+}
+
+.header_list {
+    display: flex;
+    // align-self: flex-start;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+
+    li {
+        margin: 0px 0px 0px 30px;
+    }
+}
+
+.header_link {
+    color: white;
+    // text-transform: uppercase;
+    font-size: 1.5rem;
+    transition: all 0.2s ease 0s;
+}
+
+.header_link:hover {
+    color: $white_inactive;
+    // background: rgba(92, 92, 92, 0.94);
+}
+
+.header_logo {
+
+    height: 50px;
+    position: relative;
+    z-index: 3;
+
+    img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+}
+
+
+.header_button {
+    word-wrap: normal;
+    font-size: 1.5rem;
+    max-width: 180px;
+    padding: 10px 30px;
+    margin-left: 30px;
+    background: $yellow_active;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    transition: all 0.2s ease 0s;
+}
+
+.header_button:hover {
+    background: $yellow_inactive;
+}
+
+.header_burger {
+    display: none;
+    right: 0;
+    // border-radius: 50%;
+    // background-color: #ECAD2F;
+    // height: 15px;
+}
+
+
+a.header_button {
+    text-decoration: none;
+    color: black;
+    margin: 0;
+}
+
+a.header_button:hover {
+    text-decoration: none;
+    // color: $white_inactive;
+}
+
+@media (max-width: 767px) {
+
+    body.lock {
+        overflow: hidden;
+    }
+
+    .header_burger {
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        // right: 0;
+        z-index: 3;
+    }
+
+    /* используя псевдоэлементы рисуем бургер */
+    .header_burger::before,
+    .header_burger::after {
+        content: '';
+        background-color: #fff;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+        transition: all 0.2s ease 0s;
+    }
+
+    .header_burger::before {
+        top: 0;
+    }
+
+    .header_burger::after {
+        bottom: 0;
+    }
+
+    .header_burger span {
+        position: absolute;
+        background-color: #fff;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+        transition: all 0.2s ease 0s;
+    }
+
+    .header_burger.active::before {
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    .header_burger.active::after {
+        transform: rotate(-45deg);
+        bottom: 9px;
+    }
+
+    .header_burger.active span {
+        transform: scale(0);
+    }
+
+    .header_menu {
+        position: fixed;
+        // z-index: 55;
+        // top: -100%;
+        top: 0;
+
+        // left: -100%;
+        right: -100%;
+        width: 100%;
+        height: 100%;
+        background: rgba(92, 92, 92, 0.97);
+        box-shadow: -5px 4px 8px rgba(0, 0, 0, 0.25);
+        padding: 100px 10px 0px 10px;
+        transition: all 0.5s ease 0s;
+        overflow: auto;
+    }
+
+    .header_menu.active {
+        top: 0px;
+        right: 0;
+        // left: 0px;
+        // right: 100%;
+    }
+
+    .header_body {
+        height: 50px;
+    }
+
+    .header_list {
+        display: block;
+
+        li {
+            margin: 0px 0px 27px 0px;
+        }
+    }
+
+    a.header_button {
+        word-wrap: normal;
+        font-size: 1.7rem;
+        max-width: 180px;
+        color: $yellow_active;
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0px;
+    }
+
+    a.header_button:hover {
+        background-color: transparent;
+        box-shadow: none;
+        padding: 0px;
+        color: $yellow_inactive;
+    }
+
+    .header_link {
+        font-size: 1.7rem;
+    }
+}

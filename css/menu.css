@@ -1,0 +1,343 @@
+* {
+  font-size: 1.2rem;
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: auto;
+  padding-left: 15px;
+  padding-right: 35px;
+  padding-top: 150px;
+  -webkit-box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.25);
+          box-shadow: 8px 4px 8px rgba(0, 0, 0, 0.25);
+  overflow-y: auto;
+  -webkit-transition: all 0.7s;
+  transition: all 0.7s;
+  padding-left: 20px;
+}
+
+.sidebar-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: auto;
+  gap: 30px;
+}
+
+.category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 7px;
+  padding-right: 10px;
+  border-left: 3px solid transparent;
+}
+.category img {
+  margin-right: 20px;
+  height: 50px;
+  width: 50px;
+}
+.category a,
+.category a:link,
+.category a:visited {
+  text-decoration: none;
+  color: black;
+}
+.category a:hover {
+  text-decoration: none;
+  color: #b6b5b5;
+}
+
+.category:hover {
+  border-left: 3px solid #313D47;
+}
+
+.content {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu {
+  margin-right: 0;
+  margin-left: 180px;
+}
+
+@media (max-width: 1240px) {
+  .menu {
+    margin-left: 200px;
+  }
+}
+@media (max-width: 1164px) {
+  .menu {
+    margin-left: 200px;
+  }
+  .sidebar {
+    padding-left: 10px;
+  }
+}
+.menu-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 100px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+h1 {
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 59px;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  color: #313D47;
+  padding-top: 100px;
+}
+
+.item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+          flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+  float: left;
+  padding: 75px 5px 10px 5px;
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+}
+.item img {
+  display: block;
+  margin: auto;
+}
+.item h3 {
+  margin-top: -15px;
+  margin: -15px auto 5px auto;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 700;
+}
+.item .cart {
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 8px 24px 8px 24px;
+  width: 80%;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 24px;
+  background-color: #ECAD2F;
+}
+.item .cart img {
+  margin: 0;
+  width: auto;
+  height: 30px;
+}
+
+.item:hover {
+  background-color: rgba(212, 155, 42, 0.1725490196);
+}
+
+.discr {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+  height: 180px;
+}
+
+#drinks + .menu-items .discr {
+  height: 130px;
+}
+
+@media (max-width: 1121px) {
+  #potato + .menu-items h3 {
+    height: 90px;
+  }
+  #potato + .menu-items .discr {
+    height: 200px;
+  }
+  #deserts + .menu-items h3 {
+    height: 90px;
+  }
+}
+@media (max-width: 985px) {
+  #drinks + .menu-items h3 {
+    height: 90px;
+  }
+  #burgers + .menu-items h3 {
+    height: 90px;
+  }
+}
+@media (max-width: 945px) {
+  #chicken + .menu-items h3 {
+    height: 90px;
+  }
+  #burgers + .menu-items .discr {
+    height: 200px;
+  }
+}
+.cart:hover {
+  background-color: #D49B2A;
+}
+
+@media (max-width: 887px) {
+  .sidebar {
+    height: 220px;
+    width: 100%;
+    padding: 120px 0px 15px 0px;
+    -webkit-box-shadow: -8px -4px -8px rgba(0, 0, 0, 0.25);
+            box-shadow: -8px -4px -8px rgba(0, 0, 0, 0.25);
+    background-color: white;
+    z-index: 45;
+  }
+  .sidebar-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 25px;
+    width: auto;
+  }
+  .category {
+    margin-left: 20px;
+    margin-right: 10px;
+    padding: 0;
+    padding-left: 7px;
+  }
+  .menu {
+    margin-left: 0px;
+  }
+  .category.desert {
+    padding-right: 80px;
+  }
+}
+@media (max-width: 800px) {
+  .item .discr {
+    height: 180px;
+  }
+  .item h3 {
+    font-size: 1.5rem;
+    height: 70px;
+  }
+}
+@media (max-width: 620px) {
+  .menu-items {
+    margin-top: 30px;
+  }
+  .item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 49%;
+            flex: 0 0 49%;
+    max-width: 49%;
+  }
+  .item h3 {
+    margin-top: -10px;
+    margin: -10px auto 5px auto;
+    font-size: 1.5rem;
+    height: 50px;
+  }
+  .item .discr {
+    height: 140px;
+  }
+  .item .cart img {
+    height: 20px;
+  }
+  #potato + .menu-items h3 {
+    height: 55px;
+  }
+  #deserts + .menu-items h3 {
+    height: 55px;
+  }
+  #drinks + .menu-items h3 {
+    height: 55px;
+  }
+  #burgers + .menu-items h3 {
+    height: 55px;
+  }
+  #chicken + .menu-items h3 {
+    height: 55px;
+  }
+}
+@media (max-width: 410px) {
+  .item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .item h3 {
+    margin-top: -10px;
+    margin: -10px auto 5px auto;
+    font-size: 1.6rem;
+    height: auto;
+  }
+  .item .discr {
+    font-size: 1.4rem;
+    height: auto;
+  }
+  #potato + .menu-items h3 {
+    height: auto;
+  }
+  #potato + .menu-items .discr {
+    font-size: 1.4rem;
+    height: auto;
+  }
+  #deserts + .menu-items h3 {
+    height: auto;
+  }
+  #deserts + .menu-items .discr {
+    font-size: 1.4rem;
+    height: auto;
+  }
+  #drinks + .menu-items h3 {
+    height: auto;
+  }
+  #drinks + .menu-items .discr {
+    font-size: 1.4rem;
+    height: auto;
+  }
+  #burgers + .menu-items h3 {
+    height: auto;
+  }
+  #burgers + .menu-items .discr {
+    font-size: 1.4rem;
+    height: auto;
+  }
+  #chicken + .menu-items h3 {
+    height: auto;
+  }
+  #chicken + .menu-items .discr {
+    font-size: 1.4rem;
+    height: auto;
+  }
+}

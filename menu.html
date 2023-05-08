@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/overlay.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+
+    <title>BurGo</title>
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-menu">
+            <div class="category"><img src="./img/menu/sidebar/burgers.svg"><a href="#burgers">Бургеры</a></div>
+            <div class="category"><img src="./img/menu/sidebar/chicken.svg"><a href="#chicken">Курочка</a></div>
+            <div class="category"><img src="./img/menu/sidebar/potato.svg"><a href="#potato">Картошка</a></div>
+            <div class="category"><img src="./img/menu/sidebar/drinks.svg"><a href="#drinks">Напитки</a></div>
+            <div class="category desert"><img src="./img/menu/sidebar/deserts.svg"><a href="#deserts">Десерты</a></div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="overlay" id="overlay">
+            <div class="modal-dialog">
+
+                <div class="modal-dialog-header">
+                    <h4 id="name">Нагетсы</h4><span id="close">&times;</span>
+                </div>
+
+
+                <img id="img" src="./img/main/4406.png">
+                <div class="text">Бургер от шефа теперь Де Люкс! Оригинальное сочное филе, томаты, салат айсберг, соус
+                    «Цезарь», аппетитная булочка,
+                    ломтик сыра и ломтик бекона.</div>
+                <div class="selection">
+                    <div class="amount">
+                        <label>Количиство:</label>
+                        <button id="minus">-</button>
+                        <input id="amount" type="text" value="1">
+                        <button id="plus">+</button>
+
+                    </div>
+                    <div id="cost_span" class="cost">
+                        <label>Цена: <span>6.5</span> руб.</label>
+                    </div>
+                    <div class="into-cart">
+                        В корзину
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="menu">
+
+            <h1 id="burgers">бургеры</h1>
+            <div class="menu-items">
+                <div class="item">
+                    <img src="./img/menu/burgers/4571.png" alt="">
+                    <h3>БурГоу Ориджинал</h3>
+                    <p class="discr">Тройная порция куриных
+                        стрипсов, двойной сыр, свежие овощи, Бриошь
+                        под фирменным соусом.</p>
+                    <div class="cart">
+                        <p>8.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/burgers/4572.png" alt="">
+                    <h3>БурГоу Острый</h3>
+                    <p class="discr">Тройная порция куриных
+                        стрипсов, двойной сыр, свежие овощи, Бриошь
+                        под острым соусом.</p>
+                    <div class="cart">
+                        <p>8.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/burgers/4575.png" alt="">
+                    <h3>БурГоу ДеЛюкс</h3>
+                    <p class="discr">Этот бургер - незабываемое сочетание свежих овощей, соуса ДеЛюкс и
+                        ветчины.</p>
+                    <div class="cart">
+                        <p>10.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/burgers/4575.png" alt="">
+                    <h3>ДеЛюкс Острый</h3>
+                    <p class="discr">Этот бургер - незабываемое сочетание свежих овощей, соуса ДеЛюкс и
+                        ветчины.</p>
+                    <div class="cart">
+                        <p>10.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/burgers/4574.png" alt="">
+                    <h3>Сандрэс Классик</h3>
+                    <p class="discr">Классическая булочка с кунжутом, сыр, соус Сандрэс, свежие овощи и салат.</p>
+                    <div class="cart">
+                        <p>6.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/burgers/4290.png" alt="">
+                    <h3>ТриплГоу Бекон</h3>
+                    <p class="discr">Классический БурГоу с добавленийем острого хрустящего бекона.
+                        Идеальная прожарка - идеальный бургер.</p>
+                    <div class="cart">
+                        <p>10.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/burgers/4299.png" alt="">
+                    <h3>ЧизГоу ДеЛюкс</h3>
+                    <p class="discr">Горчичный соус, кетчуп, сочная курица,
+                        сыр Чеддер, огурцы на пшеничной булочке, свежие овощи.</p>
+                    <div class="cart">
+                        <p>4.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/burgers/4730.png" alt="">
+                    <h3>ЧизГоу</h3>
+                    <p class="discr">Горчичный соус, кетчуп, хрустящий стрипс,
+                        сыр Чеддер, огурцы на пшеничной булочке.</p>
+                    <div class="cart">
+                        <p>2.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/burgers/4667.png" alt="">
+                    <h3>ЛонГоу</h3>
+                    <p class="discr">Пшеничная булочка, кусочки филе в панировке, огурцы, лук, майонезный соус и соус
+                        горчичный.</p>
+                    <div class="cart">
+                        <p>3.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <h1 id="chicken">Курочка</h1>
+            <div class="menu-items">
+                <div class="item">
+                    <img src="./img/menu/chicken/4406.png" alt="">
+                    <h3>8 Острых Крыльев</h3>
+                    <p class="discr">Наши острые куриные крылья в хрустящей панировке со жгучими специями
+                        –
+                        настоящий огонь!</p>
+                    <div class="cart">
+                        <p>16.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/chicken/4414.png" alt="">
+                    <h3>2 Острые Ножки</h3>
+                    <p class="discr">Свежее, ароматное мясо на кости - для любителей пикантных ощущений.</p>
+                    <div class="cart">
+                        <p>5.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/chicken/4406.png" alt="">
+                    <h3>5 Острых Крыльев</h3>
+                    <p class="discr">Наши острые куриные крылья в хрустящей панировке со жгучими специями
+                        –
+                        настоящий огонь!</p>
+                    <div class="cart">
+                        <p>9.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/chicken/4414.png" alt="">
+                    <h3>2 Ножки</h3>
+                    <p class="discr">Kуриные ножки с оригинальным вкусом, приготовленные по секретному рецепту.</p>
+                    <div class="cart">
+                        <p>5.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/chicken/4406.png" alt="">
+                    <h3>3 Острых Крыла</h3>
+                    <p class="discr">Наши острые куриные крылья в хрустящей панировке со жгучими специями
+                        –
+                        настоящий огонь!</p>
+                    <div class="cart">
+                        <p>4.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/chicken/4399.png" alt="">
+                    <h3>9 Наггетсов</h3>
+                    <p class="discr">Оригинальный рецепт от экспертов в курице!</p>
+                    <div class="cart">
+                        <p>13.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/chicken/4398.png" alt="">
+                    <h3>5 Наггетсов</h3>
+                    <p class="discr">Оригинальный рецепт от экспертов в курице!</p>
+                    <div class="cart">
+                        <p>8.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <img src="./img/menu/chicken/4408.png" alt="">
+                    <h3>3 Стрипса</h3>
+                    <p class="discr">Нежное куриное филе мы панируем вручную и готовим по уникальному
+                        рецепту.</p>
+                    <div class="cart">
+                        <p>8.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/chicken/4408.png" alt="">
+                    <h3>3 Стрипса Острые</h3>
+                    <p class="discr">Нежное куриное филе мы панируем вручную и готовим по уникальному
+                        рецепту.</p>
+                    <div class="cart">
+                        <p>8.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 id="potato">Картошка</h1>
+            <div class="menu-items">
+
+                <div class="item">
+                    <img src="./img/menu/potato/4643.png" alt="">
+                    <h3>Фри стандарт</h3>
+                    <p class="discr">Хрустящая корочка и мягкая серединка. В наших ломтиках мы сохранили
+                        еще больше вкуса
+                        картофеля с соусом.</p>
+                    <div class="cart">
+                        <p>5.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./img/menu/potato/4645.png" alt="">
+                    <h3>Деревенская стандарт</h3>
+                    <p class="discr">Рассыпчатый и хрустящий картофель по-деревенски по секрестному рецепту с соусом.
+                    </p>
+                    <div class="cart">
+                        <p>5.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/potato/4642.png" alt="">
+                    <h3>Фри маленькая</h3>
+                    <p class="discr">Хрустящая корочка и мягкая серединка. В наших ломтиках мы сохранили
+                        еще больше вкуса
+                        картофеля.</p>
+                    <div class="cart">
+                        <p>3.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/potato/4641.png" alt="">
+                    <h3>Фри большая</h3>
+                    <p class="discr">Хрустящая корочка и мягкая серединка. В наших ломтиках мы сохранили
+                        еще больше вкуса
+                        картофеля.</p>
+                    <div class="cart">
+                        <p>7.10 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/potato/4444.png" alt="">
+                    <h3>Картофель Гоу</h3>
+                    <p class="discr">Сочный соус, соленая картошка, таящий сыр. Этим все сказано.</p>
+                    <div class="cart">
+                        <p>8.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/potato/4445.png" alt="">
+                    <h3>Гоу по-деревенски</h3>
+                    <p class="discr">Сочный соус, соленая картошка по-деревенски, таящий сыр. Этим все сказано.</p>
+                    <div class="cart">
+                        <p>8.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+            </div>
+
+            <h1 id="drinks">Напитки</h1>
+            <div class="menu-items">
+                <div class="item">
+                    <img src="./img/menu/drinks/coca.png" alt="">
+                    <h3>Кока-кола 0.4</h3>
+                    <p class="discr">Кока-кола 0.4 л.</p>
+                    <div class="cart">
+                        <p>5.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/drinks/4369.png" alt="">
+                    <h3>Фанта 0.4</h3>
+                    <p class="discr">Фанта 0.4 л.</p>
+                    <div class="cart">
+                        <p>4.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/drinks/4371.png" alt="">
+                    <h3>Спрайт 0.4</h3>
+                    <p class="discr">Спрайт 0.4 л.</p>
+                    <div class="cart">
+                        <p>5.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./img/menu/drinks/4357.png" alt="">
+                    <h3>Шейк клубника 0.4</h3>
+                    <p class="discr">Клубничный молочный коктейль 0.4 л.</p>
+                    <div class="cart">
+                        <p>4.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./img/menu/drinks/4356.png" alt="">
+                    <h3>Шейк ваниль 0.4</h3>
+                    <p class="discr">Ванильный молочный коктейль 0.4 л.</p>
+                    <div class="cart">
+                        <p>4.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/drinks/4359.png" alt="">
+                    <h3>Шейк шоколад 0.4</h3>
+                    <p class="discr">Шоколадный молочный коктейль 0.4 л.</p>
+                    <div class="cart">
+                        <p>4.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 id="deserts">Десерты</h1>
+            <div class="menu-items">
+
+                <div class="item">
+                    <img src="./img/menu/deserts/4375.png" alt="">
+                    <h3>Мороженое клубника</h3>
+                    <p class="discr">Стаканчик мороженого с клубничным джемом.</p>
+                    <div class="cart">
+                        <p>3.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="./img/menu/deserts/4376.png" alt="">
+                    <h3>Рожок</h3>
+                    <p class="discr">Вкус детства в хрустящем рожке.</p>
+                    <div class="cart">
+                        <p>2.00 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./img/menu/deserts/4443.png" alt="">
+                    <h3>Пирожок с вишней</h3>
+                    <p class="discr">Хрустящий и горячий пирожок с сладкой вишневой начинкой.</p>
+                    <div class="cart">
+                        <p>2.50 р.</p>
+                        <img src="./img/menu/cart.svg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    </div>
+
+    <footer id="myfooter"></footer>
+
+    <script src="js/order.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/menu.js"></script>
+</body>
+
+</html>

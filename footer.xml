@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<footer>
+    <div class="container">
+        <fbody class="footer_body">
+            <about class="about_us_info">
+                <h4>
+                    BurGo
+                </h4>
+                <p>
+                    лучший сервис по доставке
+                    бургеров в Беларуси
+                </p>
+                <a href="./about.html">
+                    Больше о нас
+                </a>
+            </about>
+            <contacts class="contact_info">
+                <h4>Контакты:</h4>
+                <p>+357 (33) 651 25 63</p>
+                <h4>Время работы:</h4>
+                <p>8.00 - 23.00 (Пн-Вс)</p>
+            </contacts>
+            <socials class="social_media">
+                <h4>Мы в социальных сетях:</h4>
+                <links class="links">
+                    <a href="#" class="footer_link"><img src="./img/INST.svg" alt="logo"></a>
+                    <a href="#" class="footer_link"><img src="./img/TELEGRAM.svg" alt="logo"></a>
+                    <a href="#" class="footer_link"><img src="./img/FACEBOOK.svg" alt="logo"></a>
+                    <a href="#" class="footer_link"><img src="./img/TWITTER.svg" alt="logo"></a>
+                    <a href="#" class="footer_link"><img src="./img/VK.svg" alt="logo"></a>
+                </links>
+
+            </socials>
+        </fbody>
+    </div>
+</footer>

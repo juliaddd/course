@@ -1,0 +1,394 @@
+@import "./variables.scss";
+
+.menu-items {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    justify-content: space-around;
+    row-gap: 20px;
+}
+
+.item {
+    flex: 0 0 30%;
+    max-width: 30%;
+    float: left;
+    padding: 75px 5px 10px 5px;
+    position: relative;
+    width: 100%;
+    border-radius: 16px;
+    background-color: white;
+
+    img {
+        height: 200px;
+        display: block;
+        margin: auto;
+    }
+
+    h3 {
+        margin-top: -15px;
+        margin: -15px auto 5px auto;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+
+button {
+    background-color: $yellow_active;
+    width: 50px;
+    border-radius: 8px;
+
+}
+
+#minus:hover {
+    background-color: $yellow_inactive;
+}
+
+#plus:hover {
+    background-color: $yellow_inactive;
+}
+
+.cart {
+    p {
+        width: 70%;
+        text-align: center;
+    }
+}
+
+
+.cart {
+    margin: auto;
+    // width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.title {
+    width: 100%;
+    min-height: 200px;
+}
+
+.lettuce1 {
+    background-image: url("../img/main/Lettuce-left.png");
+    display: block;
+    width: 280px;
+    height: 390px;
+    position: absolute;
+    left: -5px;
+    background-position: top right;
+    margin-top: -5%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.2s ease-in;
+}
+
+.lettuce2 {
+    background-image: url("../img/main/Lettuce-right1.png");
+    display: block;
+    width: 280px;
+    height: 397px;
+    position: absolute;
+    right: 0;
+    margin-top: -10%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.5s ease-out;
+}
+
+h1 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 15%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $blue;
+
+    span {
+        color: $yellow_active;
+        font-weight: inherit;
+
+    }
+}
+
+h2 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.0rem;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: $blue;
+
+    span {
+        color: $yellow_active;
+        font-weight: inherit;
+
+    }
+}
+
+.sum-clear {
+    display: flex;
+    justify-content: space-around;
+    // height: 100%;
+    // height: 500px
+}
+
+#clear {
+    width: 200px;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+    background-color: $yellow_active;
+    border-radius: 16PX;
+    text-align: center;
+    // float: right;
+    margin-right: 10%;
+    display: inline-block;
+    // margin-bottom: 40px;
+}
+
+#clear:hover {
+    background-color: $yellow_inactive;
+}
+
+.bg {
+    padding-bottom: 50px;
+    // height: ;
+    min-height: 60%;
+}
+
+#sum {
+    width: 200px;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+    background-color: white;
+    border: 2px solid $yellow_active;
+    border-radius: 16PX;
+    text-align: center;
+    display: inline-block;
+
+    margin-left: 10%;
+}
+
+#sum:hover {
+    border-color: $yellow_inactive;
+}
+
+#clear:hover {
+    background-color: $yellow_inactive;
+}
+
+#order {
+    width: 200px;
+    padding: 10px 20px 10px 20px;
+    margin: 20px auto 20px auto;
+    background-color: $yellow_active;
+    // border: 2px solid $yellow_active;
+    border-radius: 16PX;
+    text-align: center;
+    // margin-left: 10%;
+    align-self: center;
+}
+
+#order:hover {
+    background-color: $yellow_inactive;
+}
+
+@media (max-width: 1200px) {
+
+
+    .lettuce1 {
+
+        width: 240px;
+        height: 285px;
+
+    }
+
+    .lettuce2 {
+
+        width: 230px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 1075px) {
+
+    .lettuce1 {
+        margin-top: 10%;
+    }
+
+    .lettuce2 {
+        margin-top: -20%;
+    }
+}
+
+@media (max-width: 956px) {
+    .item {
+
+        h3 {
+            height: 75px;
+        }
+
+        img {
+            height: 170px;
+        }
+    }
+}
+
+@media (max-width: 882px) {
+    .item {
+        img {
+            height: 150px;
+        }
+    }
+
+    .lettuce1 {
+        width: 140px;
+        height: 165px;
+    }
+
+    .lettuce2 {
+        width: 180px;
+        height: 260px;
+    }
+}
+
+@media (max-width: 680px) {
+
+    .item {
+        flex: 0 0 48%;
+        max-width: 48%;
+        font-size: 1.3rem;
+
+        h3 {
+            margin-top: -10px;
+            margin: -10px auto 5px auto;
+            font-size: 1.5rem;
+            height: 60px;
+        }
+
+    }
+
+    h1 {
+        // padding-top: 10%;
+        margin-top: 20%;
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 2.0rem;
+    }
+
+    .lettuce1 {
+        width: 90px;
+        height: 105px;
+        margin-top: 10%;
+    }
+
+    .lettuce2 {
+        width: 100px;
+        height: 100px;
+        margin-top: -20%;
+    }
+
+    #clear {
+        width: auto;
+        font-size: 1.3rem;
+    }
+
+    #sum {
+        width: auto;
+        font-size: 1.3rem;
+    }
+
+    #order {
+        width: 200px;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (max-width: 490px) {
+
+    .item {
+        font-size: 1.2;
+
+        img {
+            height: 120px;
+        }
+
+    }
+
+    .lettuce1 {
+        width: 90px;
+        height: 105px;
+        margin-top: 15%;
+    }
+
+    .lettuce2 {
+        width: 100px;
+        height: 100px;
+        margin-top: -40%;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .item {
+        flex: 0 0 100%;
+        max-width: 100%;
+
+        img {
+            height: 170px;
+        }
+    }
+
+    h1 {
+        margin-top: 25%;
+    }
+
+    button {
+        padding: 10px;
+    }
+
+    .sum-clear {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        row-gap: 20px;
+
+    }
+
+    #clear {
+        margin: 0;
+        width: 50%;
+        font-size: 1.3rem;
+    }
+
+    #sum {
+        margin: 0;
+        width: 50%;
+        font-size: 1.3rem;
+    }
+
+    #order {
+        margin-top: 50px;
+        width: 50%;
+        font-size: 1.3rem;
+        border: 2px solid white;
+    }
+}

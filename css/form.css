@@ -1,0 +1,136 @@
+.form-back {
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba(146, 146, 146, 0.734);
+  z-index: 50;
+  -webkit-transition: all 0.7 linear;
+  transition: all 0.7 linear;
+}
+
+.form {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+  width: 80%;
+  background-color: white;
+  border-radius: 24px;
+}
+
+.note {
+  font-size: 1.2rem;
+  margin-left: 5%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  width: 50%;
+  height: 30%;
+}
+.note p {
+  margin-top: 10px;
+}
+
+.field {
+  margin-bottom: 5%;
+  height: 40%;
+  width: 95%;
+  margin-left: 5%;
+}
+.field input {
+  margin-right: 5%;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.street {
+  width: 50%;
+  height: 40px;
+  background-color: rgba(49, 61, 71, 0.4941176471);
+  border-radius: 8px;
+  padding-left: 5px;
+  border: 2px solid #313D47;
+}
+
+.house {
+  width: 10%;
+  height: 40px;
+  background-color: rgba(49, 61, 71, 0.4941176471);
+  border-radius: 8px;
+  padding-left: 5px;
+  border: 2px solid #313D47;
+}
+
+.apartment {
+  width: 10%;
+  height: 40px;
+  background-color: rgba(49, 61, 71, 0.4941176471);
+  border-radius: 8px;
+  padding-left: 5px;
+  border: 2px solid #313D47;
+}
+
+.phone-input {
+  width: 100%;
+  height: auto;
+  margin-top: 10%;
+}
+
+.number {
+  width: 50%;
+  height: 40px;
+  background-color: rgba(49, 61, 71, 0.4941176471);
+  border-radius: 8px;
+  padding-left: 5px;
+  border: 2px solid #313D47;
+}
+
+.submit {
+  width: 20%;
+  height: 50px;
+  background-color: #ECAD2F;
+  border-radius: 8px;
+  padding-left: 5px;
+  margin-left: 5%;
+  -webkit-box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.submit:hover {
+  background-color: #D49B2A;
+}
+
+#close {
+  position: absolute;
+  font-size: 1.7rem;
+  right: 20px;
+  top: 20px;
+  padding: 10px 20px 10px 20px;
+}
+
+@media (max-width: 640px) {
+  .note {
+    width: 80%;
+  }
+  .note p {
+    margin-top: 10px;
+  }
+  .street {
+    width: 80%;
+    margin-bottom: 10%;
+  }
+  .house {
+    width: 20%;
+  }
+  .apartment {
+    width: 20%;
+  }
+  .number {
+    width: 80%;
+  }
+  .submit {
+    margin: 10% auto 20px auto;
+    width: 40%;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" type="text/css" href="css/header.css">
+    <link rel="stylesheet" type="text/css" href="css/form.css">
+    <link rel="stylesheet" type="text/css" href="css/footer.css">
+    <link rel="stylesheet" type="text/css" href="css/overlay.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital@0;1&display=swap" rel="stylesheet">
+
+    <title>BurGo</title>
+</head>
+
+<body>
+
+    <header id="myheader"></header>
+    <div class="container">
+        <div class="title">
+            <div class="lettuce1"></div>
+            <h1><span>ready, set,</span> bur<span>go</span>!</h1>
+            <h2><span>60 минут </span>- или заказ бесплатно</h2>
+            <div class="lettuce2"></div>
+        </div>
+
+    </div>
+    <div class="form-back" id="form">
+        <div class="form"><span id="close">&times;</span>
+            <div class="note">
+
+                <p>Пожалуйста, укажите адрес, куда нужно доставить заказ, а также свой номер телефона.</p>
+                <p>Мы свяжемся с вами в течении минуты.</p>
+            </div>
+            <div class="field">
+                <input class="street" type="text" placeholder="введите название улицы">
+                <input class="house" type="number" placeholder="дом">
+                <input class="apartment" type="number" placeholder="кв.">
+                <div class="phone-input"><input required class="number" type="text"
+                        placeholder="введите номер телефона">
+                    <input type="submit" class="submit" disabled>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="bg">
+
+        <div class="container">
+            <div class="menu-items" id="menu-items">
+
+            </div>
+
+        </div>
+        <div class="sum-clear">
+            <div id="sum">Сумма: <span>0.00</span> р.</div>
+            <div id="clear">Очистить корзину</div>
+        </div>
+
+        <div id="order">Сделать заказ</div>
+    </div>
+    </div>
+    </div>
+
+    <footer id="myfooter">
+        <!-- <div class="container">
+            <div class="menu-items" id="menu-items">
+                hi
+            </div>
+        </div> -->
+    </footer>
+
+    <script src="js/cart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/index.js"></script>
+
+    <script src="js/form.js"></script>
+    <!-- <script src="js/menu.js"></script> -->
+</body>
+
+</html>

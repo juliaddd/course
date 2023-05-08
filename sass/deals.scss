@@ -1,0 +1,139 @@
+@import "./variables.scss";
+
+.bg {
+    background-color: $blue;
+    padding-top: 15%;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.3rem;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+
+    span {
+        color: $yellow_active;
+        font-weight: inherit;
+
+    }
+}
+
+h2 {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.7rem;
+    line-height: 59px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+
+    span {
+        color: $yellow_active;
+        font-weight: inherit;
+        white-space: nowrap;
+    }
+}
+
+.deals {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.deal {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    img {
+        max-width: 40%;
+        margin: 10px;
+    }
+
+    p {
+        margin-bottom: 15px;
+        font-size: 1.3rem;
+
+        span {
+            color: $blue;
+            font-weight: 700;
+        }
+    }
+}
+
+.info {
+    font-size: 1.3rem;
+    margin-bottom: 50px;
+    font-style: italic;
+}
+
+.deal:hover {
+    background-color: #313d4764;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    p {
+        span {
+            color: white;
+        }
+    }
+}
+
+
+
+@media (max-width: 900px) {
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 767px) {}
+
+@media (max-width: 540px) {
+
+    .deal {
+        flex-direction: column;
+
+        img {
+            max-width: 60%;
+        }
+    }
+
+    .bg {
+        padding-top: 30%;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+        // margin-top: 35%;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+        line-height: 30px;
+    }
+
+
+    p {
+        font-size: 1.1rem;
+    }
+
+
+}
