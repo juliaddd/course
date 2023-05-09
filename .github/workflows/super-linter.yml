@@ -1,0 +1,39 @@
+# Configuration file for GitHub Super Linter
+# https://github.com/github/super-linter
+
+# Run all available linters against the codebase
+VALIDATE_ALL_CODEBASE: false
+
+# Only run the linters listed below
+#VALIDATE_LANGUAGES: "csharp,golang"
+
+# Exclude specific linters from running
+#VALIDATE_EXCLUDE_LINTERS: "ansible-lint,flake8"
+
+# Exclude specific rules from running
+#VALIDATE_EXCLUDE_RULES: "MD003,MD007"
+
+# Exclude specific files from running
+#VALIDATE_EXCLUDE_FILES: "README.md,docs/**/*"
+
+# Exclude files that match regex patterns
+VALIDATE_REGEX_EXCLUDE: '.*\.css$'
+
+# Set environment variables for the linter
+#ENVIRONMENT:
+#  MY_VAR: "my value"
+
+# Fail the build on warnings
+#VALIDATE_FAIL_ON_WARNINGS: true
+
+# Fail the build on errors
+#VALIDATE_FAIL_ON_ERRORS: true
+
+# Number of seconds to wait for a linter to complete
+#VALIDATE_TIMEOUT_SECONDS: 10
+
+# Number of retries to attempt if a linter returns a non-zero exit code
+#VALIDATE_RETRY_LIMIT: 3
+
+# Number of seconds to wait between retries
+#VALIDATE_RETRY_WAIT_SECONDS: 3
