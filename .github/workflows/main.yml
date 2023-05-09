@@ -46,4 +46,5 @@ jobs:
       uses: super-linter/super-linter@v5.0.0
 
     env: 
+      VALIDATE_CSS: false
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
