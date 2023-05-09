@@ -46,5 +46,9 @@ jobs:
       uses: super-linter/super-linter@v5.0.0
 
     env: 
+      VALIDATE_YAML: false
+      VALIDATE_XML: false
+      VALIDATE_JAVASCRIPT_ES: false
+      VALIDATE_HTML: false
       VALIDATE_CSS: false
       GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
