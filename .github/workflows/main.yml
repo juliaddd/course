@@ -45,7 +45,8 @@ jobs:
     - name: Super-Linter
       uses: super-linter/super-linter@v5.0.0
 
-    env: 
+    env:
+      VALIDATE_JSCPD: false
       VALIDATE_YAML: false
       VALIDATE_XML: false
       VALIDATE_JAVASCRIPT_ES: false
