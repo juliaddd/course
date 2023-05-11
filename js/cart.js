@@ -1,7 +1,6 @@
 
 document.addEventListener('DOMContentLoaded', function (event) {
     let data = [];
-
     if (localStorage.getItem("cart") != null) {
         data = JSON.parse(localStorage.getItem("cart"));
     }
@@ -20,8 +19,7 @@ document.addEventListener('DOMContentLoaded', function (event) {
             <p><span>${item.amount}</span> шт. - <span>${item.cost}</span> р.</p>
             <button id="plus">+</button>
         </div>
-    </div>
-  `
+    </div>  `
     });
 
     // сумма подсчет
