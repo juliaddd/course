@@ -13,6 +13,7 @@ section.banner {
   background-color: #313D47;
   color: white;
 }
+
 .banner-bg h1 {
   font-family: "Rubik";
   font-style: normal;
@@ -20,8 +21,8 @@ section.banner {
   font-size: 2.3rem;
   line-height: 59px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -29,10 +30,12 @@ section.banner {
   padding-left: 10px;
   padding-right: 10px;
 }
+
 .banner-bg h1 span {
   color: #ECAD2F;
   font-weight: inherit;
 }
+
 .banner-bg img {
   height: 70%;
   width: auto;
@@ -43,6 +46,7 @@ section.banner {
   -webkit-transition: all 0.4s ease-in;
   transition: all 0.4s ease-in;
 }
+
 .banner-bg .banner-bg-floor {
   width: 100%;
   height: 30%;
@@ -57,75 +61,95 @@ section.banner {
   section.banner {
     height: 662px;
   }
+
   .banner-bg {
     height: 762px;
   }
+
   .banner-bg img {
     height: 500px;
   }
+
   .banner-bg h1 {
     margin-top: 15%;
   }
+
   .banner-bg .banner-bg-floor {
     height: 25%;
   }
 }
+
 @media (max-width: 767px) {
   section.banner {
     height: 602px;
   }
+
   .banner-bg {
     height: 702px;
   }
+
   .banner-bg img {
     height: 400px;
   }
+
   .banner-bg h1 {
     margin-top: 16%;
   }
+
   .banner-bg .banner-bg-floor {
     height: 30%;
     bottom: -2px;
   }
 }
+
 @media (max-width: 620px) {
   section.banner {
     height: 500px;
   }
+
   .banner-bg {
     height: 600px;
   }
+
   .banner-bg img {
     height: 300px;
   }
+
   .banner-bg h1 {
     margin-top: 15%;
     font-size: 2rem;
   }
+
   .banner-bg .banner-bg-floor {
     height: 35%;
     bottom: -2px;
   }
 }
+
 @media (max-width: 490px) {
   section.banner {
     height: 450px;
   }
+
   .banner-bg {
     height: 550px;
   }
+
   .banner-bg img {
     height: 230px;
   }
+
   .banner-bg h1 {
     margin-top: 25%;
     font-size: 1.7rem;
   }
+
   .banner-bg .banner-bg-floor {
     height: 35%;
     bottom: -2px;
   }
 }
+
 section.short-menu {
   width: 100%;
   min-height: 910px;
@@ -133,6 +157,7 @@ section.short-menu {
   padding: 0;
   padding-bottom: 50px;
 }
+
 section.short-menu h1 {
   font-family: "Rubik";
   font-style: normal;
@@ -147,10 +172,12 @@ section.short-menu h1 {
   padding-right: 10px;
   color: #313D47;
 }
+
 section.short-menu h1 span {
   color: #ECAD2F;
   font-weight: inherit;
 }
+
 section.short-menu a,
 section.short-menu a:link,
 section.short-menu a:visited {
@@ -192,85 +219,100 @@ section.short-menu a:visited {
     width: 240px;
     height: 285px;
   }
+
   .lettuce2 {
     width: 230px;
     height: 280px;
   }
 }
+
 @media (max-width: 1075px) {
   .lettuce1 {
     margin-top: 10%;
   }
+
   .lettuce2 {
     margin-top: -20%;
   }
 }
+
 @media (max-width: 882px) {
   .lettuce1 {
     width: 140px;
     height: 165px;
   }
+
   .lettuce2 {
     width: 180px;
     height: 260px;
   }
 }
+
 @media (max-width: 670px) {
   .lettuce1 {
     width: 90px;
     height: 105px;
     margin-top: 10%;
   }
+
   .lettuce2 {
     width: 100px;
     height: 100px;
     margin-top: -20%;
   }
+
   section.short-menu h1 {
     font-size: 2rem;
   }
 }
+
 @media (max-width: 490px) {
   .lettuce1 {
     width: 90px;
     height: 105px;
     margin-top: 15%;
   }
+
   .lettuce2 {
     width: 100px;
     height: 100px;
     margin-top: -40%;
   }
+
   section.short-menu h1 {
     font-size: 1.7rem;
   }
 }
+
 .menu-items {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 120px;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 33.33333%;
-          flex: 0 0 33.33333%;
+  -ms-flex: 0 0 33.33333%;
+  flex: 0 0 33.33333%;
   max-width: 33.33333%;
   float: left;
   padding: 75px 5px 0px 5px;
   position: relative;
   width: 100%;
+  border-radius: 16px;
 }
+
 .item img {
   display: block;
   margin: auto;
 }
+
 .item h3 {
   margin-top: -15px;
   margin: -15px auto 5px auto;
@@ -278,11 +320,16 @@ section.short-menu a:visited {
   text-align: center;
   font-weight: 700;
 }
+
 .item .discr {
   text-align: center;
   font-size: 1.5rem;
   margin-top: 10px;
   height: 180px;
+}
+
+.item:hover {
+  background-color: rgba(212, 155, 42, 0.1725490196);
 }
 
 .seemore {
@@ -300,48 +347,57 @@ section.short-menu a:visited {
 @media (max-width: 1200px) {
   .item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 49%;
-            flex: 0 0 49%;
+    -ms-flex: 0 0 49%;
+    flex: 0 0 49%;
     max-width: 49%;
   }
+
   .item .discr {
     height: 140px;
   }
 }
+
 @media (max-width: 800px) {
   .item .discr {
     height: 180px;
   }
 }
+
 @media (max-width: 620px) {
   .menu-items {
     margin-top: 30px;
   }
+
   .item {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
+
   .item h3 {
     margin-top: -10px;
     margin: -10px auto 5px auto;
     font-size: 1.8rem;
   }
+
   .item .discr {
     font-size: 1.6rem;
     height: auto;
   }
+
   .seemore {
     font-size: 1.6rem;
   }
 }
+
 .short-menu2 {
   width: 100%;
   height: auto;
   padding-bottom: 50px;
   color: white;
 }
+
 .short-menu2 h1 {
   color: white;
   font-family: "Rubik";
@@ -350,8 +406,8 @@ section.short-menu a:visited {
   font-size: 2.3rem;
   line-height: 59px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   text-transform: uppercase;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -359,13 +415,16 @@ section.short-menu a:visited {
   padding-right: 10px;
   padding-top: 10%;
 }
+
 .short-menu2 h1 span {
   color: #ECAD2F;
   font-weight: inherit;
 }
+
 .short-menu2 .seemore:hover {
   color: #D49B2A;
 }
+
 .short-menu2 a,
 .short-menu2 a:link,
 .short-menu2 a:visited {
@@ -414,29 +473,35 @@ section.short-menu a:visited {
     font-size: 1.7rem;
   }
 }
+
 @media (max-width: 670px) {
   .short-menu2 h1 {
     font-size: 2rem;
   }
 }
+
 @media (max-width: 1201px) {
   .tomato1 {
     display: none;
   }
+
   .tomato2 {
     display: block;
   }
 }
+
 @media (max-width: 1110px) {
   .tomato2 {
     margin-top: -50%;
   }
 }
+
 @media (max-width: 620px) {
   .tomato2 {
     display: none;
   }
 }
+
 @media (max-width: 767px) {
   .tomato2 {
     width: 260px;
